@@ -1,7 +1,7 @@
 # ACDS docker
 
 ## Preparation
-Put all everything in public_html folder except the sql dump file.
+Put all server files in public_html folder except the sql dump file.
 
 ## Build
 ```shell
