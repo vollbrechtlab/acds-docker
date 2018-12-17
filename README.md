@@ -8,12 +8,12 @@ Put all server files in public_html folder except the sql dump file.
 docker build -t acds .
 ```
 
-## Run in background
+## Run in foreground
 ```shell
 docker run -p 8080:80 -it acds /bin/bash
 ```
 
-## Run in foreground
+## Run in background
 ```shell
 docker run -p 8080:80 -id acds /bin/bash
 ```

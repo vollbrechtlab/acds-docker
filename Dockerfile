@@ -6,6 +6,7 @@ WORKDIR /dockerwork
 
 COPY . .
 
+RUN apt-get update -y && apt-get install php5-mysql -y
 RUN rm /var/www/example.com/public_html -r
 RUN mv public_html /var/www/example.com/
 RUN mv my.cnf1 ~/.my.cnf
