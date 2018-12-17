@@ -11,7 +11,7 @@ COPY setup_db.sql  .
 COPY docker-entrypoint.sh  .
 
 RUN apt-get update -y && apt-get install php5-mysql -y
-RUN rm -rf /var/www/example.com/public_html
+RUN rm -rf /var/www/example.com/public_html/*
 COPY public_html.tar.gz .
 RUN tar -xvf public_html.tar.gz -C /var/www/example.com/
 #RUN mv public_html /var/www/example.com/
